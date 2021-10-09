@@ -7,7 +7,7 @@ Created on Wed Oct  6 11:48:32 2021
 
 import numpy as np
 
-#función para saber si la matriz es cuadrada
+#Función para saber si la matriz es cuadrada
 def matrizc(m): 
     if len(m) == len (m [0]): 
         print ("La matriz que ingresó es cuadrada") 
