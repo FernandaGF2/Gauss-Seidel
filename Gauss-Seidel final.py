@@ -7,12 +7,14 @@ Created on Wed Oct  6 11:48:32 2021
 
 import numpy as np
 
+#función para saber si la matriz es cuadrada
 def matrizc(m): 
     if len(m) == len (m [0]): 
-        print ("La matriz es cuadrada") 
+        print ("La matriz que ingresó es cuadrada") 
     else: 
         print ("\ nLa matriz que ingresó no es cuadrada")
         
+#Funciones para leer matrices de un archivo de texto
 def read_inputs(text):
     a_temp, b_temp = text.strip().split('=')
     b_temp = eval(b_temp.strip(' '))
@@ -85,7 +87,7 @@ for i in range(0,n-1,1):
         
 Ab_2 = np.concatenate((A_a2, b_b2), axis = 1)
 
-#Procedimiento
+#Solución del sistema de ecuaciones 
 umbral = 0.0001 
 
 x_np = np.zeros(len(A_a2)) 
